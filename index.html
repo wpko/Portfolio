@@ -1,147 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>My Portolio</title>
-    <link href="https:cdnjsdelivrnet/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body{
-      margin:0;
-      height:100vh;
-      overflow:hidden;
-      background:#000;
-    }
-    .stars{
-      position: absolute;
-      width: 2px; height: 2px;
-      background: transparent;
-      box-shadow: 50vw 20vh 1px #fff, 10vw 80vh 1px #fff, 80vw 40vh 1px #fff, 30vw 10vh 1px #fff, 90vw 90vh 1px #fff;
-      animation: twinkle 10s linear infinite;
-    }
-    @keyframes twinkle{
-      from{
-        transform: translateY(0); opacity: 1;
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        background: #000;
       }
-      to{
-        transform: translateY(-100vh); opacity: 0.2;
+      .stars {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: transparent;
+        box-shadow: 50vw 20vh 1px #fff, 10vw 80vh 1px #fff, 80vw 40vh 1px #fff, 30vw 10vh 1px #fff, 90vw 90vh 1px #fff;
+        animation: twinkle 10s linear infinite;
       }
-      .card{
-      backdrop-filter: blur(10px);
-      background: rgba(0,0,0,0.5);
-      border:none;
-      transition:transform .3s, box-shadow .3s;
-    }
-    .card:hover{
-      transform: translateY(-8px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    }
-    .card-title{
-      color:#ffd700;
-    }
-    .card-subtitle{
-      color: #ccc;
-    }
-    .card-text{
-      color: #eee;
-      line-height: 1.6;
-    }
-  </style>
+      @keyframes twinkle {
+        from {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        to {
+          transform: translateY(-100vh);
+          opacity: 0.2;
+        }
+      }
+      .card {
+        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      }
+      .card-title {
+        color: #ffd700;
+      }
+      .card-subtitle {
+        color: #ccc;
+      }
+      .card-text {
+        color: #eee;
+        line-height: 1.6;
+      }
+      header {
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      nav ul li a {
+        color: #ffd700;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      section {
+        padding: 40px;
+        color: #fff;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        color: #aaa;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Welcome to My Portfolio</h1>
       <nav>
         <ul>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="#expertises">Expertises</a>
-          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#expertises">Expertises</a></li>
         </ul>
       </nav>
     </header>
+
     <section id="about">
       <h2>About Me</h2>
-      <p>Hello! I am a python Developer specializing in web development and Machine Learning. I'm consistently putting in steady effort to gradually accomplish projects that benefit both the environment and people.</p>
+      <p>Hello! I am a Python Developer specializing in web development and Machine Learning. I'm consistently putting in steady effort to gradually accomplish projects that benefit both the environment and people.</p>
     </section>
+
     <section id="projects">
       <h2>Projects</h2>
       <div class="stars"></div>
       <div class="stars" style="animation-duration: 15s; opacity: 0.7; transform: scale(1.5)"></div>
       <div class="stars" style="animation-duration: 20s; opacity: 0.5; transform: scale(2)"></div>
+
       <div class="container py-5">
         <div class="row g-4">
+          <!-- Project Cards -->
           <div class="col-md-6">
             <div class="card p-4">
               <h3 class="card-title">Drug Prediction</h3>
-              <h4 class="card-subtitle mt-3">Description</h4> 
-              <p class="card-text">A machine learning model deployed using FastAPI that predicts the most suitable drug for a patient based on health-related inputs. The backend is optimized for real-time response and easy integration into healthcare platforms.</p>
+              <h4 class="card-subtitle mt-3">Description</h4>
+              <p class="card-text">A machine learning model deployed using FastAPI that predicts the most suitable drug for a patient based on health-related inputs.</p>
               <h4 class="card-subtitle mt-2">Purpose</h4>
-              <p class="card-text">To assist healthcare professionals in prescribing appropriate medications using data-driven insights and improve treatment accuracy.</p>
+              <p class="card-text">To assist healthcare professionals using data-driven insights.</p>
               <a href="https://wpko.github.io/Drug-Prediction-Frontend/" target="_blank">View on direct website</a>
             </div>
           </div>
+
           <div class="col-md-6">
             <div class="card p-4">
               <h3 class="card-title">Spam Email Detection</h3>
               <h4 class="card-subtitle mt-3">Description</h4>
-              <p class="card-text">A text classification project that involves email preprocessing, vectorization using TF-IDF, and applying the Naive Bayes algorithm to detect spam emails effectively.</p>
+              <p class="card-text">Email classification using TF-IDF and Naive Bayes to detect spam effectively.</p>
               <h4 class="card-subtitle mt-2">Purpose</h4>
-              <p class="card-text">To filter out unwanted and potentially harmful emails, enhancing email security and improving user productivity.</p>
+              <p class="card-text">To enhance email security and productivity.</p>
               <a href="https://wpko.github.io/Spam_Email_Detection_frontend/" target="_blank">View on direct website</a>
             </div>
           </div>
+
           <div class="col-md-6">
             <div class="card p-4">
               <h3 class="card-title">Stock Prediction Graph</h3>
               <h4 class="card-subtitle mt-3">Description</h4>
-              <p class="card-text">A deep learning model utilizing Long Short-Term Memory (LSTM) networks to forecast future stock prices. Historical stock data is used to train the model, and predictions are visualized with interactive graphs.</p>
+              <p class="card-text">LSTM-based forecasting model visualized with interactive graphs.</p>
               <h4 class="card-subtitle mt-2">Purpose</h4>
-              <p class="card-text">To provide investors and analysts with insights into potential stock trends and support decision-making using AI-based forecasting tools.</p>
+              <p class="card-text">To support investors with AI-based market insights.</p>
               <a href="https://wpko.github.io/Stock-Prediction-Frontend/" target="_blank">View on direct website</a>
             </div>
           </div>
+
           <div class="col-md-6">
             <div class="card p-4">
               <h3 class="card-title">Grocery Store</h3>
               <h4 class="card-subtitle mt-3">Description</h4>
-              <p class="card-text">A web-based grocery ordering system where users can browse products, add items to their cart, and place orders online. The interface is built for ease of use and smooth user experience.</p>
+              <p class="card-text">Web-based grocery ordering system with cart and order functionality.</p>
               <h4 class="card-subtitle mt-2">Purpose</h4>
-              <p class="card-text">To simplify grocery shopping by providing a convenient and user-friendly online platform for ordering daily essentials.</p>
+              <p class="card-text">To simplify grocery shopping with a user-friendly interface.</p>
               <a href="https://wpko.github.io/Grocery-Frontend/" target="_blank">View on direct website</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: waiphyoko168@gmail.com</p>
-      <p>Phone: +66991219591 (line & Whatsapp)</p>
-      <p>GitHub:
-        <a href="https://github.com/wpko" target="_blank">github.com/wpko</a>
-      </p>
+      <p>Phone: +66991219591 (Line & WhatsApp)</p>
+      <p>GitHub: <a href="https://github.com/wpko" target="_blank">github.com/wpko</a></p>
     </section>
+
     <section id="expertises">
       <h2>Expertises</h2>
       <div class="expertises">
-        <p>Python for DataScience</p>
-        <p>Machine Learning models</p>
+        <p>Python for Data Science</p>
+        <p>Machine Learning Models</p>
         <p>FastAPI</p>
         <p>Regression, Classification, and Clustering</p>
       </div>
     </section>
+
     <footer>
-      <p &copy;> 2025 Wai Phyo Ko</p>
+      <p>&copy; 2025 Wai Phyo Ko</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
