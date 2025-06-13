@@ -8,17 +8,18 @@
     <style>
       body {
         margin: 0;
-        height: 100vh;
-        overflow: hidden;
         background: #000;
+        color: white;
+        font-family: sans-serif;
       }
       .stars {
-        position: absolute;
-        width: 2px;
-        height: 2px;
-        background: transparent;
-        box-shadow: 50vw 20vh 1px #fff, 10vw 80vh 1px #fff, 80vw 40vh 1px #fff, 30vw 10vh 1px #fff, 90vw 90vh 1px #fff;
-        animation: twinkle 10s linear infinite;
+        position: fixed; /* fixed 대신 absolute ဆို scroll လုပ်လိုက်တာနဲ့ ပျောက်တတ် */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
       }
       @keyframes twinkle {
         from {
