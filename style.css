@@ -120,9 +120,9 @@ h2 {
 .card {
   padding: 20px;
   border-radius: 16px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(0, 0, 0, 0.75); /* before 0.5 */
+  border: 1px solid rgba(255,255,255,0.2);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.1);
   transition: all 0.3s ease;
 }
 
@@ -132,13 +132,27 @@ h2 {
 }
 
 .card-title {
-  color: #00ffcc;
-  margin-bottom: 10px;
+  color: #ffd700;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+.card-text {
+  color: #ffffff;   /* before = #eee or grey */
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .card p {
-  color: #ddd;
-  font-size: 15px;
+  color: #ffffff;
+}
+
+.card strong {
+  color: #00ffcc;
+}
+
+.card-text, .card-title {
+  text-shadow: 0 0 5px rgba(0,0,0,0.8);
 }
 
 /* ============================= */
@@ -160,6 +174,16 @@ h2 {
 .btn-ai:hover {
   transform: scale(1.05);
   background: linear-gradient(90deg, #00c3ff, #00ffcc);
+}
+
+.btn-outline-light {
+  border-color: #00ffcc;
+  color: #00ffcc;
+}
+
+.btn-outline-light:hover {
+  background-color: #00ffcc;
+  color: #000;
 }
 
 /* ============================= */
