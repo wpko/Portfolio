@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Wai Phyo Ko | AI Engineer Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
       body {
@@ -84,6 +84,8 @@
       <h1>Wai Lay</h1>
       <h3 style="color:#ffd700;">AI Engineer | Machine Learning | LLM</h3>
       <p>
+        <a href="#projects" class="btn btn-warning mt-3">View Projects</a>
+        <a href="#contact" class="btn btn-outline-light mt-3">Contact Me</a>
         I build end-to-end AI applications using Machine Learning, Computer Vision, and LLMs —
         from model training to production deployment.
       </p>
@@ -122,7 +124,8 @@
                 Built a Retrieval-Augmented Generation system that answers questions from PDF documents using LLM and FAISS.
               </p>
               <p class="card-text"><strong>Tech:</strong> LangChain, FastAPI, Streamlit</p>
-              <a href="#">Live Demo</a> | <a href="https://github.com/wpko">GitHub</a>
+              <a href="#" class="btn btn-success btn-sm mt-2">Live Demo</a>
+              <a href="https://github.com/wpko" class="btn btn-outline-light btn-sm mt-2">GitHub</a>
             </div>
           </div>
 
@@ -134,7 +137,8 @@
                 CNN-based image classification system with FastAPI backend and Streamlit UI.
               </p>
               <p><strong>Tech:</strong> TensorFlow, FastAPI</p>
-              <a href="#">Live Demo</a> | <a href="https://github.com/wpko">GitHub</a>
+              <a href="#" class="btn btn-success btn-sm mt-2">Live Demo</a>
+              <a href="https://github.com/wpko" class="btn btn-outline-light btn-sm mt-2">GitHub</a>
             </div>
           </div>
 
@@ -146,7 +150,8 @@
                 NLP model that classifies text sentiment with interactive dashboard.
               </p>
               <p><strong>Tech:</strong> NLP, scikit-learn</p>
-              <a href="#">Live Demo</a> | <a href="https://github.com/wpko">GitHub</a>
+              <a href="#" class="btn btn-success btn-sm mt-2">Live Demo</a>
+              <a href="https://github.com/wpko" class="btn btn-outline-light btn-sm mt-2">GitHub</a>
             </div>
           </div>
 
@@ -158,7 +163,8 @@
                 Movie recommendation system using TF-IDF and cosine similarity.
               </p>
               <p><strong>Tech:</strong> scikit-learn</p>
-              <a href="#">Live Demo</a> | <a href="https://github.com/wpko">GitHub</a>
+              <a href="#" class="btn btn-success btn-sm mt-2">Live Demo</a>
+              <a href="https://github.com/wpko" class="btn btn-outline-light btn-sm mt-2">GitHub</a>
             </div>
           </div>
 
@@ -170,12 +176,21 @@
                 Production-ready API for house price prediction using LightGBM.
               </p>
               <p><strong>Tech:</strong> LightGBM, FastAPI</p>
-              <a href="#">Live Demo</a> | <a href="https://github.com/wpko">GitHub</a>
+              <a href="#" class="btn btn-success btn-sm mt-2">Live Demo</a>
+              <a href="https://github.com/wpko" class="btn btn-outline-light btn-sm mt-2">GitHub</a>
             </div>
           </div>
 
         </div>
       </div>
+    </section>
+    <section>
+      <h2 class="text-center">Highlights</h2>
+      <ul class="text-center list-unstyled">
+        <li>🤖 Experience with LLM + RAG Systems</li>
+        <li>⚡ Developed FastAPI Production APIs</li>
+        <li>🌐 Deployed AI Applications</li>
+      </ul>
     </section>
     
     <section id="contact">
@@ -186,22 +201,43 @@
         GitHub:
         <a href="https://github.com/wpko" target="_blank">github.com/wpko</a>
       </p>
+      <p class="text-center">
+        Portfolio:
+        <a href="https://wpko.github.io/Portfolio/" target="_blank">View Website</a>
+      </p>
     </section>
 
     <section id="skills">
       <h2 class="text-center">Skills</h2>
       <div class="text-center">
-        <p><strong>AI / ML:</strong> Machine Learning, NLP, Computer Vision, LLM (RAG)</p>
-        <p><strong>Backend:</strong> FastAPI</p>
-        <p><strong>Frontend:</strong> Streamlit</p>
-        <p><strong>Tools:</strong> Git, GitHub</p>
+        <ul class="list-unstyled text-center">
+          <li>✔ Machine Learning, NLP, Computer Vision</li>
+          <li>✔ LLM & RAG (LangChain, FAISS)</li>
+          <li>✔ FastAPI (Backend API)</li>
+          <li>✔ Streamlit (Frontend)</li>
+          <li>✔ Git & GitHub</li>
+        </ul>
       </div>
     </section>
 
     <footer>
-      <p>&copy; Wai Phyo Ko</p>
+      <p>© 2026 Wai Phyo Ko | AI Engineer Portfolio</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const starsContainer = document.querySelector('.stars');
+      for (let i = 0; i < 100; i++) {
+        let star = document.createElement('div');
+        star.style.position = 'absolute';
+        star.style.width = '2px';
+        star.style.height = '2px';
+        star.style.background = 'white';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.animation = 'twinkle 10s linear infinite';
+        starsContainer.appendChild(star);
+      }
+</script>
   </body>
 </html>
