@@ -13,7 +13,7 @@
         font-family: sans-serif;
       }
       .stars {
-        position: fixed; /* fixed 대신 absolute ဆို scroll လုပ်လိုက်တာနဲ့ ပျောက်တတ် */
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -81,104 +81,125 @@
   </head>
   <body>
     <header>
-      <h1>Welcome to My Portfolio</h1>
+      <h1>Wai Lay</h1>
+      <h3 style="color:#ffd700;">AI Engineer | Machine Learning | LLM</h3>
+      <p>
+        I build end-to-end AI applications using Machine Learning, Computer Vision, and LLMs —
+        from model training to production deployment.
+      </p>
+
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#expertises">Expertises</a></li>
         </ul>
       </nav>
     </header>
     <section id="about" class="py-5 bg-dark text-light">
       <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-10">
-            <h2 class="mb-4">About Me</h2>
-            <p class="lead text-start">
-              As a dedicated and highly motivated <strong>Python Developer</strong>, I bring a strong foundation in both <strong>web development</strong> and <strong>machine learning</strong>, with practical experience building scalable APIs, automation scripts, and predictive data models. I specialize in tools like <strong>FastAPI</strong>, <strong>scikit-learn</strong>, and <strong>Pandas</strong>, and I have built full-stack applications that integrate clean frontends with robust backends. I take pride in continuously learning and solving problems efficiently, whether it's building a web app for stock price forecasting, spam email detection, or a complete grocery ordering system. With a freelance mindset, I value clear communication, reliability, and delivering polished work on time. I'm actively looking for remote freelance opportunities where I can apply my skills, collaborate with like-minded developers, and contribute meaningful solutions to clients worldwide.
-            </p>
-          </div>
-        </div>
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="lead text-center">
+          Aspiring AI Engineer with hands-on experience building real-world AI systems.
+          I specialize in Machine Learning, NLP, Computer Vision, and LLM-based applications.
+          I develop full-stack AI solutions using FastAPI and Streamlit, from model training to deployment.
+        </p>
       </div>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <div class="stars"></div>
-      <div class="stars" style="animation-duration: 15s; opacity: 0.7; transform: scale(1.5)"></div>
-      <div class="stars" style="animation-duration: 20s; opacity: 0.5; transform: scale(2)"></div>
+      <h2 class="text-center">AI Projects</h2>
 
       <div class="container py-5">
         <div class="row g-4">
-          <!-- Project Cards -->
+
+          <!-- RAG Chatbot -->
           <div class="col-md-6">
             <div class="card p-4">
-              <h3 class="card-title">Drug Prediction</h3>
-              <h4 class="card-subtitle mt-3">Description</h4>
-              <p class="card-text">A machine learning model deployed using FastAPI that predicts the most suitable drug for a patient based on health-related inputs.</p>
-              <h4 class="card-subtitle mt-2">Purpose</h4>
-              <p class="card-text">To assist healthcare professionals using data-driven insights.</p>
-              <a href="https://wpko.github.io/Drug-Prediction-Frontend/" target="_blank">View on direct website</a>
+              <h3 class="card-title">AI RAG Chatbot</h3>
+              <p class="card-text">
+                Built a Retrieval-Augmented Generation system that answers questions from PDF documents using LLM and FAISS.
+              </p>
+              <p class="card-text"><strong>Tech:</strong> LangChain, FastAPI, Streamlit</p>
+              <a href="#">Live Demo</a> | <a href="https://github.com/wpko">GitHub</a>
             </div>
           </div>
 
+          <!-- Image Classifier -->
           <div class="col-md-6">
             <div class="card p-4">
-              <h3 class="card-title">Spam Email Detection</h3>
-              <h4 class="card-subtitle mt-3">Description</h4>
-              <p class="card-text">Email classification using TF-IDF and Naive Bayes to detect spam effectively.</p>
-              <h4 class="card-subtitle mt-2">Purpose</h4>
-              <p class="card-text">To enhance email security and productivity.</p>
-              <a href="https://wpko.github.io/Spam_Email_Detection_frontend/" target="_blank">View on direct website</a>
+              <h3 class="card-title">AI Image Classifier</h3>
+              <p class="card-text">
+                CNN-based image classification system with FastAPI backend and Streamlit UI.
+              </p>
+              <p><strong>Tech:</strong> TensorFlow, FastAPI</p>
+              <a href="#">Live Demo</a> | <a href="https://github.com/wpko">GitHub</a>
             </div>
           </div>
 
+          <!-- Sentiment Analysis -->
           <div class="col-md-6">
             <div class="card p-4">
-              <h3 class="card-title">Stock Prediction Graph</h3>
-              <h4 class="card-subtitle mt-3">Description</h4>
-              <p class="card-text">LSTM-based forecasting model visualized with interactive graphs.</p>
-              <h4 class="card-subtitle mt-2">Purpose</h4>
-              <p class="card-text">To support investors with AI-based market insights.</p>
-              <a href="https://wpko.github.io/Stock-Prediction-Frontend/" target="_blank">View on direct website</a>
+              <h3 class="card-title">Sentiment Analysis</h3>
+              <p class="card-text">
+                NLP model that classifies text sentiment with interactive dashboard.
+              </p>
+              <p><strong>Tech:</strong> NLP, scikit-learn</p>
+              <a href="#">Live Demo</a> | <a href="https://github.com/wpko">GitHub</a>
             </div>
           </div>
 
+          <!-- Recommendation -->
           <div class="col-md-6">
             <div class="card p-4">
-              <h3 class="card-title">Grocery Store</h3>
-              <h4 class="card-subtitle mt-3">Description</h4>
-              <p class="card-text">Web-based grocery ordering system with cart and order functionality.</p>
-              <h4 class="card-subtitle mt-2">Purpose</h4>
-              <p class="card-text">To simplify grocery shopping with a user-friendly interface.</p>
-              <a href="https://wpko.github.io/Grocery-Frontend/" target="_blank">View on direct website</a>
+              <h3 class="card-title">Recommendation System</h3>
+              <p class="card-text">
+                Movie recommendation system using TF-IDF and cosine similarity.
+              </p>
+              <p><strong>Tech:</strong> scikit-learn</p>
+              <a href="#">Live Demo</a> | <a href="https://github.com/wpko">GitHub</a>
             </div>
           </div>
+
+          <!-- Deployment -->
+          <div class="col-md-6">
+            <div class="card p-4">
+              <h3 class="card-title">ML Deployment API</h3>
+              <p class="card-text">
+                Production-ready API for house price prediction using LightGBM.
+              </p>
+              <p><strong>Tech:</strong> LightGBM, FastAPI</p>
+              <a href="#">Live Demo</a> | <a href="https://github.com/wpko">GitHub</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
-
+    
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: waiphyoko168@gmail.com</p>
-      <p>Phone: +66991219591 (Line & WhatsApp)</p>
-      <p>GitHub: <a href="https://github.com/wpko" target="_blank">github.com/wpko</a></p>
+      <h2 class="text-center">Contact</h2>
+      <p class="text-center">📧 waiphyoko168@gmail.com</p>
+      <p class="text-center">📞 +66 991219591</p>
+      <p class="text-center">
+        GitHub:
+        <a href="https://github.com/wpko" target="_blank">github.com/wpko</a>
+      </p>
     </section>
 
-    <section id="expertises">
-      <h2>Expertises</h2>
-      <div class="expertises">
-        <p>Python for Data Science</p>
-        <p>Machine Learning Models</p>
-        <p>FastAPI</p>
-        <p>Regression, Classification, and Clustering</p>
+    <section id="skills">
+      <h2 class="text-center">Skills</h2>
+      <div class="text-center">
+        <p><strong>AI / ML:</strong> Machine Learning, NLP, Computer Vision, LLM (RAG)</p>
+        <p><strong>Backend:</strong> FastAPI</p>
+        <p><strong>Frontend:</strong> Streamlit</p>
+        <p><strong>Tools:</strong> Git, GitHub</p>
       </div>
     </section>
 
     <footer>
-      <p>&copy; 2025 Wai Phyo Ko</p>
+      <p>&copy; Wai Phyo Ko</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
