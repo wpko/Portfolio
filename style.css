@@ -238,3 +238,35 @@ footer {
     transform: translateY(0);
   }
 }
+/* ===== FORCE FIX TEXT VISIBILITY ===== */
+
+.card,
+.card p,
+.card-text {
+  color: #ffffff !important;
+}
+
+.card-title {
+  color: #ffd700 !important;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.card strong {
+  color: #00ffcc !important;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.85) !important;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.btn-outline-light {
+  border-color: #00ffcc !important;
+  color: #00ffcc !important;
+}
+
+.btn-outline-light:hover {
+  background-color: #00ffcc !important;
+  color: #000 !important;
+}
