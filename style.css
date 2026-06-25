@@ -286,3 +286,12 @@ color:black;
 border-radius:20px;
 
 }
+#skills h4{
+    color:#ffd700;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+#skills .card{
+    min-height:180px;
+}
