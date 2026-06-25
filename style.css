@@ -270,3 +270,10 @@ footer {
   background-color: #00ffcc !important;
   color: #000 !important;
 }
+
+.skill-badge{
+  background: #00ffcc;
+  color: black;
+  margin: 3px;
+  font-weight: bold;
+}
